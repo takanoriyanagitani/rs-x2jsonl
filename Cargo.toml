@@ -3,6 +3,19 @@ name = "rs-x2jsonl"
 version = "0.1.0"
 edition = "2024"
 
+description = "Converts the excel sheet to json lines."
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-x2jsonl"
+homepage = "https://github.com/takanoriyanagitani/rs-x2jsonl"
+documentation = "https://docs.rs/rs-x2jsonl/latest"
+keywords = ["excel", "sheet", "jsonl", "json", "ndjson"]
+category = ["command-line-utilities"]
+
+exclude = [
+	"x2jsonl",
+	"sample.xlsx",
+]
+
 [lints.rust]
 unsafe_code = "forbid"
 
