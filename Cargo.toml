@@ -1,0 +1,42 @@
+[package]
+name = "rs-x2jsonl"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+
+[[bin]]
+name = "x2jsonl"
+
+[dependencies.clap]
+version = "4"
+features = ["derive"]
+
+[dependencies.serde_json]
+version = "1"
+default-features = false
+features = [
+	"std",
+]
+
+[dependencies.chrono]
+version = "0"
+default-features = false
+features = [
+	"clock",
+	"oldtime",
+	"std",
+]
+
+[dependencies.calamine]
+version = "0"
+default-features = false
+features = [
+	"chrono",
+]
